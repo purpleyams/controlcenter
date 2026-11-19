@@ -1,57 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-
-    <style>
-        body {
-            background-color: #080b1c;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #ff1a5b;
-            font-size: 50px;
-        }
-
-        p {
-            color: #cccccc;
-        }
-
-        button {
-            background: #ff1a5b;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #006d91;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dff8f5">
+  <title>AQUA / Medspa & Wellness</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header glass">
+    <a class="brand" href="#"><span class="brand-mark">✳</span><span>AQUA<span class="brand-light"> / MEDSPA</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-view="welcome">WELCOME</button>
+      <button class="nav-link" data-view="treatments">TREATMENTS</button>
+      <button class="nav-link" data-view="wellness">WELLNESS</button>
+      <button class="nav-link" data-view="yourvisit">YOUR VISIT</button>
+    </nav>
+    <button class="book-button" id="bookTop">BOOK A CONSULTATION <span>↗</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  </header>
 
-    <h1>control center</h1>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> A LITTLE SPACE TO FEEL LIKE YOURSELF</div>
+        <h1>Find your<br><em>natural</em> balance.</h1>
+        <p class="hero-text">A softer approach to self-care. Explore treatments, discover your rituals, and make a little room for you.</p>
+        <div class="hero-actions">
+          <button class="pill-button" id="exploreBtn">EXPLORE THE MENU <span>→</span></button>
+          <a class="text-link" href="#about">A MOMENT FOR YOU <span>↘</span></a>
+        </div>
+        <div class="hero-note"><span class="tiny-orbit">✧</span><span>TAKE A BREATH. YOU'RE RIGHT WHERE YOU NEED TO BE.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="sun-disc"></div>
+        <div class="orb orb-large"></div><div class="orb orb-small"></div>
+        <div class="water-shape"></div>
+        <div class="leaf leaf-one">〰</div><div class="leaf leaf-two">〰</div>
+        <div class="hero-art-label glass"><span>01 / RESET</span><b>Make time<br>for yourself.</b><small>YOUR WELLNESS JOURNEY</small></div>
+        <div class="sparkle sparkle-a">✧</div><div class="sparkle sparkle-b">✳</div>
+      </div>
+    </section>
 
-    <p>hello</p>
+    <section class="ticker"><div>GLOW AT YOUR OWN PACE <span>✳</span> RESTORE YOUR ROUTINE <span>✳</span> A MOMENT FOR YOU <span>✳</span> GLOW AT YOUR OWN PACE <span>✳</span></div></section>
 
-    <button onclick="showMessage()">
-        click me
-    </button>
+    <section class="section intro-section" id="about">
+      <div class="section-kicker">01 — THE AQUA APPROACH</div>
+      <div class="intro-grid">
+        <h2>Wellness is<br>not a <em>checklist.</em></h2>
+        <div><p class="body-copy">Think of this as your personal pause button. Browse at your own pace, learn about options, and choose what feels right for you. No pressure to have it all figured out.</p><span class="soft-caption">A CALM SPACE. YOUR OWN TERMS.</span></div>
+      </div>
+    </section>
 
-    <script>
-        function showMessage() {
-            alert("test test test");
-        }
-    </script>
+    <section class="section treatments-section" id="treatments">
+      <div class="section-heading"><div><div class="section-kicker">02 — EXPLORE THE MENU</div><h2>A ritual for<br><em>every version</em> of you.</h2></div><p class="heading-aside">Explore our service categories.<br>Details and availability are confirmed<br>during a consultation.</p></div>
+      <div class="treatment-grid">
+        <article class="treatment-card card-blue"><div class="card-art face-art"><div class="face-oval"></div><span class="art-star">✧</span></div><div class="card-meta"><span>01 / SKIN</span><span>↗</span></div><h3>Skin rituals</h3><p>Facials, refreshers, and skin-focused care.</p><button class="card-link" data-card="Skin rituals">DISCOVER MORE <span>→</span></button></article>
+        <article class="treatment-card card-lilac"><div class="card-art flower-art"><div class="flower">✿</div><span class="art-orb"></span></div><div class="card-meta"><span>02 / RESTORE</span><span>↗</span></div><h3>Rest & restore</h3><p>Make space for a slower kind of self-care.</p><button class="card-link" data-card="Rest & restore">DISCOVER MORE <span>→</span></button></article>
+        <article class="treatment-card card-mint"><div class="card-art water-art"><div class="water-rings"></div><span>≈</span></div><div class="card-meta"><span>03 / GLOW</span><span>↗</span></div><h3>Glow services</h3><p>Explore options designed around your goals.</p><button class="card-link" data-card="Glow services">DISCOVER MORE <span>→</span></button></article>
+      </div>
+      <p class="disclaimer">Service availability, suitability, risks, and expected results vary. A qualified provider can discuss your options.</p>
+    </section>
 
+    <section class="section control-section" id="wellness">
+      <div class="control-heading"><div><div class="section-kicker">03 — YOUR PERSONAL RESET</div><h2>Settle into<br><em>your own rhythm.</em></h2></div><div class="control-stamp">AQUA<br><b>SELF-CARE<br>STATION</b><span>✳</span></div></div>
+      <div class="wellness-panel glass">
+        <div class="panel-top"><div><span class="panel-dot"></span> PERSONAL WELLNESS CONSOLE</div><span>SESSION 0008 / LIVE</span></div>
+        <div class="wellness-grid">
+          <div class="wellness-control">
+            <label for="calmSlider">HOW CALM DO YOU FEEL?</label><div class="slider-labels"><span>NOT QUITE</span><output id="calmValue">50%</output><span>FLOATING</span></div><input id="calmSlider" type="range" min="0" max="100" value="50"><p class="microcopy">A little check-in. There is no right answer.</p>
+          </div>
+          <div class="wellness-control">
+            <label>CHOOSE YOUR CURRENT MOOD</label><div class="mood-buttons"><button class="mood active" data-mood="Calm">☁ Calm</button><button class="mood" data-mood="Curious">✧ Curious</button><button class="mood" data-mood="Overwhelmed">〰 Overwhelmed</button></div><p class="microcopy" id="moodResponse">A gentle place to begin.</p>
+          </div>
+          <div class="wellness-control full-control">
+            <label for="intention">SET AN INTENTION FOR TODAY</label><div class="intention-row"><input id="intention" type="text" placeholder="Today, I want to feel..." maxlength="80"><button id="saveIntention">SAVE INTENTION ↗</button></div><p class="microcopy" id="intentionMessage">Your words belong to you. (The system may have other ideas.)</p>
+          </div>
+          <div class="wellness-control full-control">
+            <div class="toggle-row"><div><label for="quietToggle">QUIET MODE</label><p class="microcopy">Reduce visual activity and notifications.</p></div><label class="switch"><input id="quietToggle" type="checkbox"><span class="switch-track"></span></label></div>
+          </div>
+        </div>
+        <div class="panel-bottom"><span id="consoleStatus">ALL IS WELL. TAKE YOUR TIME.</span><button id="resetConsole">RESET MY SPACE ↻</button></div>
+      </div>
+    </section>
+
+    <section class="section visit-section" id="yourvisit">
+      <div class="visit-card glass"><div class="section-kicker">04 — YOUR VISIT</div><h2>Come as<br>you <em>are.</em></h2><p>Curious about where to begin? A consultation is a chance to talk through your goals, ask questions, and learn what options may be appropriate for you.</p><button class="pill-button" id="bookBottom">LET'S TALK <span>↗</span></button><div class="visit-decoration">◌</div></div>
+      <div class="visit-side"><div class="section-kicker">A SMALL REMINDER</div><h3>You don't have to optimize every part of yourself.</h3><p>Rest is not a reward for getting everything right. You are allowed to simply be here.</p><span class="soft-caption">BREATHE IN. LET GO A LITTLE.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">✳</span><span>AQUA<span class="brand-light"> / MEDSPA</span></span></a><span>CARE, AT YOUR OWN PACE.</span><span>DEMO CONCEPT / 2026</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Your request has been received.</div>
+  <script src="script.js"></script>
 </body>
 </html>
